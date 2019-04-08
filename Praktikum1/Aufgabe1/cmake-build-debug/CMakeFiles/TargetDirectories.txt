@@ -1,0 +1,3 @@
+C:/Users/Maike/Documents/Studium/HoeMa 2/HoeMa2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/Aufgabe1.dir
+C:/Users/Maike/Documents/Studium/HoeMa 2/HoeMa2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Maike/Documents/Studium/HoeMa 2/HoeMa2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
