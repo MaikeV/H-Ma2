@@ -1,0 +1,16 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Maike/Documents/Studium/HöMa 2/Praktika/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Users/Maike/MinGW/mingw32/bin/mingw32-make.exe" "cmTC_8487d/fast"
+C:/Users/Maike/MinGW/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_8487d.dir\build.make CMakeFiles/cmTC_8487d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Maike/Documents/Studium/H÷Ma 2/Praktika/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8487d.dir/testCCompiler.c.obj
+C:\Users\Maike\MinGW\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_8487d.dir\testCCompiler.c.obj   -c "C:\Users\Maike\Documents\Studium\H├ÂMa 2\Praktika\Praktikum1\Aufgabe1\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c"
+gcc.exe: error: C:\Users\Maike\Documents\Studium\H├ÂMa 2\Praktika\Praktikum1\Aufgabe1\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_8487d.dir\build.make:65: CMakeFiles/cmTC_8487d.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Maike/Documents/Studium/H÷Ma 2/Praktika/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_8487d/fast] Error 2
+
+
