@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Maike/Documents/Studium/HoeMa 2/HoeMa2/Praktikum1/Aufgabe1/main.cpp
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/CMyVector.cpp
+CMyVector.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/CMyVector.h
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/CMyVector.h
+vector
+-
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/main.cpp
 iostream
 -
+CMyVector.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/CMyVector.h
 
