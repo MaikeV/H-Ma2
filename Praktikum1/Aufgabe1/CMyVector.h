@@ -6,20 +6,28 @@
 #ifndef AUFGABE1_CMYVECTOR_H
 #define AUFGABE1_CMYVECTOR_H
 
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+
+
 class CMyVector {
 private:
     int dimension;
-    double values[];
+    std::vector<double> values;
 
 public:
-    CMyVector(int dimension, double values[]);
-    CMyVector();
+    CMyVector(int dimension, std::vector<double> vector);
 
     int getDimension() const;
-
-    void setDimension(int dimension);
-    virtual ~CMyVector();
+    double getValue(int position) const;
+    void setValue(double value, int position);
+    double getLength();
 };
+
+CMyVector operator+(CMyVector a, CMyVector b);
+CMyVector operator*(double lambda, CMyVector a);
 
 
 #endif //AUFGABE1_CMYVECTOR_H

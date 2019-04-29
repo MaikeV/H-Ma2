@@ -1,16 +1,11 @@
-#include <iostream>
 #include "CMyVector.h"
 
 int main() {
-    std::vector<double> v;
-
-
-
-    CMyVector vector(2, v);
-
+    CMyVector vector;
     vector.setDimension(2);
+
 
     int dim = vector.getDimension();
 
-    std::cout << dim;
+    std::cout << dim << " " << vector.getValue(1);
 }

@@ -4,22 +4,51 @@
 
 #include "CMyVector.h"
 
-//CMyVector::CMyVector(int dimension) : dimension(dimension) {}
-
-CMyVector::CMyVector() = default;
-
-CMyVector::CMyVector(int dimension, double values[]) {
+CMyVector::CMyVector(int dimension, std::vector<double> values) {
     this->dimension = dimension;
-
-    this->values =
+    this->values = values;
 }
-
-CMyVector::~CMyVector() = default;
 
 int CMyVector::getDimension() const {
     return dimension;
 }
 
-void CMyVector::setDimension(int dimension) {
-    CMyVector::dimension = dimension;
+double CMyVector::getValue(int position) const {
+    return this->values.at(position);
+}
+
+void CMyVector::setValue(double value, int position) {
+    this->values.at(position) = value;
+}
+
+double CMyVector::getLength() {
+    double length = 0;
+
+    for (int index = 0; index <= this->values.size(); index++) {
+        length += this->values.at(index) * this->values.at(index);
+    }
+
+    return sqrt(length);
+}
+
+CMyVector operator+(CMyVector a, CMyVector b){
+
+    if (a.getDimension() != b.getDimension()) {
+        return a;
+    }
+
+    std::vector<double> v;
+
+    CMyVector result(a.getDimension(), v);
+
+    for(int index = 0; index <= a.getDimension(); index++) {
+        double val = a.getValue(index) + b.getValue(index);
+        result.setValue(val, index);
+    }
+
+    return result;
+}
+
+CMyVector operator*(double lambda, CMyVector a){
+    
 }
