@@ -24,14 +24,14 @@ void CMyVector::setValue(double value, int position) {
 double CMyVector::getLength() {
     double length = 0;
 
-    for (int index = 0; index <= this->values.size(); index++) {
+    for(int index = 0; index < this->values.size(); index++) {
         length += this->values.at(index) * this->values.at(index);
     }
 
     return sqrt(length);
 }
 
-CMyVector operator+(CMyVector a, CMyVector b){
+CMyVector operator+(CMyVector a, CMyVector b) {
 
     if (a.getDimension() != b.getDimension()) {
         return a;
@@ -39,16 +39,25 @@ CMyVector operator+(CMyVector a, CMyVector b){
 
     std::vector<double> v;
 
-    CMyVector result(a.getDimension(), v);
-
-    for(int index = 0; index <= a.getDimension(); index++) {
+    for(int index = 0; index < a.getDimension(); index++) {
         double val = a.getValue(index) + b.getValue(index);
-        result.setValue(val, index);
+        v.push_back(val);
     }
+
+    CMyVector result(a.getDimension(), v);
 
     return result;
 }
 
 CMyVector operator*(double lambda, CMyVector a){
-    
+    std::vector<double> v;
+
+    for (int index = 0; index < a.getDimension(); index++) {
+        double value = a.getValue(index) * lambda;
+        v.push_back(value);
+    }
+
+    CMyVector result(a.getDimension(), v);
+
+    return result;
 }
