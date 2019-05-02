@@ -6,6 +6,11 @@
 
 CMyVector::CMyVector(int dimension, std::vector<double> values) {
     this->dimension = dimension;
+
+    for(int index = 0; index < this->dimension; index++) {
+        values.push_back(0);
+    }
+
     this->values = values;
 }
 
@@ -60,4 +65,8 @@ CMyVector operator*(double lambda, CMyVector a){
     CMyVector result(a.getDimension(), v);
 
     return result;
+}
+
+double CMyVector::operator[](int position) {
+    return this->getValue(position);
 }

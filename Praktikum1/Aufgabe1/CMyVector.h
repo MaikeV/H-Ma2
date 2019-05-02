@@ -24,7 +24,10 @@ public:
     double getValue(int position) const;
     void setValue(double value, int position);
     double getLength();
+
+    double operator[](int position);
 };
+
 
 CMyVector operator+(CMyVector a, CMyVector b);
 CMyVector operator*(double lambda, CMyVector a);
