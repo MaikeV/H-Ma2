@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/CMyVector.cpp" "/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o"
-  "/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/main.cpp" "/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/Aufgabe1.dir/main.cpp.o"
+  "/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/CMyVector.cpp" "/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o"
+  "/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/main.cpp" "/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles/Aufgabe1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

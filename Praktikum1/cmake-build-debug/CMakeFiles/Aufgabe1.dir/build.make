@@ -43,10 +43,10 @@ RM = /snap/clion/69/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1
+CMAKE_SOURCE_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Aufgabe1.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/Aufgabe1.dir/flags.make
 
 CMakeFiles/Aufgabe1.dir/main.cpp.o: CMakeFiles/Aufgabe1.dir/flags.make
 CMakeFiles/Aufgabe1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Aufgabe1.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aufgabe1.dir/main.cpp.o -c /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Aufgabe1.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aufgabe1.dir/main.cpp.o -c /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/main.cpp
 
 CMakeFiles/Aufgabe1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aufgabe1.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/main.cpp > CMakeFiles/Aufgabe1.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/main.cpp > CMakeFiles/Aufgabe1.dir/main.cpp.i
 
 CMakeFiles/Aufgabe1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aufgabe1.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/main.cpp -o CMakeFiles/Aufgabe1.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/main.cpp -o CMakeFiles/Aufgabe1.dir/main.cpp.s
 
 CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o: CMakeFiles/Aufgabe1.dir/flags.make
 CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o: ../CMyVector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o -c /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/CMyVector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o -c /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/CMyVector.cpp
 
 CMakeFiles/Aufgabe1.dir/CMyVector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aufgabe1.dir/CMyVector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/CMyVector.cpp > CMakeFiles/Aufgabe1.dir/CMyVector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/CMyVector.cpp > CMakeFiles/Aufgabe1.dir/CMyVector.cpp.i
 
 CMakeFiles/Aufgabe1.dir/CMyVector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aufgabe1.dir/CMyVector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/CMyVector.cpp -o CMakeFiles/Aufgabe1.dir/CMyVector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/CMyVector.cpp -o CMakeFiles/Aufgabe1.dir/CMyVector.cpp.s
 
 # Object files for target Aufgabe1
 Aufgabe1_OBJECTS = \
@@ -95,7 +95,7 @@ Aufgabe1: CMakeFiles/Aufgabe1.dir/main.cpp.o
 Aufgabe1: CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o
 Aufgabe1: CMakeFiles/Aufgabe1.dir/build.make
 Aufgabe1: CMakeFiles/Aufgabe1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Aufgabe1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Aufgabe1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Aufgabe1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/Aufgabe1.dir/clean:
 .PHONY : CMakeFiles/Aufgabe1.dir/clean
 
 CMakeFiles/Aufgabe1.dir/depend:
-	cd /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1 /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1 /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/Aufgabe1/cmake-build-debug/CMakeFiles/Aufgabe1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1 /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1 /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles/Aufgabe1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Aufgabe1.dir/depend
 
