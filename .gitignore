@@ -1,4 +1,5 @@
-./Idea
+.Idea/
+.idea/
 
 # Compiled Object files
 *.slo
