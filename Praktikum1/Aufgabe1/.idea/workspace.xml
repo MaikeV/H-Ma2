@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9740d6e6-caf6-48f0-97ec-d85bbb529b5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CMyVector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CMyVector.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMyVector.h" beforeDir="false" afterPath="$PROJECT_DIR$/CMyVector.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -32,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+            <state relative-caret-position="435">
+              <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -41,11 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMyVector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-              <folding>
-                <element signature="e#113#132#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="98">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -67,8 +63,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CMyVector.h" />
         <option value="$PROJECT_DIR$/CMyVector.cpp" />
+        <option value="$PROJECT_DIR$/CMyVector.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -76,7 +72,7 @@
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="70" />
     <option name="y" value="27" />
-    <option name="width" value="925" />
+    <option name="width" value="923" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
@@ -91,11 +87,6 @@
             <path>
               <item name="Aufgabe1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Aufgabe1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aufgabe1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aufgabe1" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -141,18 +132,18 @@
       <option name="presentableId" value="Default" />
       <updated>1554711767273</updated>
       <workItem from="1554711768930" duration="679000" />
-      <workItem from="1556172996968" duration="26790000" />
+      <workItem from="1556172996968" duration="39819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27469000" />
+    <option name="totallyTimeSpent" value="40498000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="27" width="925" height="1053" extended-state="4" />
+    <frame x="70" y="27" width="923" height="1053" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29692832" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29760548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.3293348" />
@@ -196,16 +187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMyVector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="e#113#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMyVector.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-240">
@@ -213,10 +194,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMyVector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+        <state relative-caret-position="435">
+          <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
         </state>
       </provider>
     </entry>
