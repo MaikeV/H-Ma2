@@ -12,6 +12,16 @@ CMyVector f(CMyVector j) {
     return vector;
 }
 
+CMyVector g(CMyVector n) {
+    std::vector<double> v;
+    CMyVector vector(2, v);
+
+    vector.setValue(pow(n.getValue(0), 3) * pow(n.getValue(1), 3) - 2 * n.getValue(1), 0);
+    vector.setValue(n.getValue(0) - 2, 1);
+
+    return vector;
+}
+
 CMyVector gradient(CMyVector x, double (*function)(CMyVector x)) {
     std::vector<double> v;
     CMyVector vector(x.getDimension(), v);
@@ -50,47 +60,66 @@ CMyMatrix jacobi(CMyVector x, CMyVector (*f)(CMyVector x)) {
     return jacobi;
 }
 
+CMyVector newton(CMyVector x, CMyVector (*f)(CMyVector x)) {
+    std::vector<double> v;
+    CMyVector dx(x.getDimension(), v);
+    CMyVector newton(x.getDimension(), v);
+
+    int i = 0;
+
+    while(i < 50 && f(x).getLength() > 1e-5) {
+        std::cout << "Schritt " << i << ":" << std::endl;
+
+        std::cout << "x: "<< x.getValue(0) << " " << x.getValue(1) << std::endl;
+        std::cout << "f(x): "<< f(x).getValue(0) << " " << f(x).getValue(1) << std::endl;
+
+        for (int n = 0; n < x.getDimension(); n++) {
+            dx.setValue((-1) * (jacobi(x, f).invers() * f(x)).getValue(n), n);
+
+            newton.setValue(x.getValue(n) + dx.getValue(n), n);
+        }
+
+        x = newton;
+
+        i++;
+
+        if (f(x).getLength() < 1e-5)
+            std::cout << "Ende wegen ||f(x)|| < 1e-5." << std::endl;
+        else if(i == 50)
+            std::cout << "Ende wegen 50. Schritt erreicht." << std::endl;
+    }
+
+    return x;
+}
 
 int main() {
     std::vector<double> v;
 
-    CMyVector vector1(2, v);
-    vector1.setValue(0.200000, 0);
-    vector1.setValue(-2.100000, 1);
-
-    CMyVector vector2(3, v);
-    vector2.setValue(0.00000, 0);
-    vector2.setValue(0.00000, 1);
-    vector2.setValue(0.00000, 2);
-
+    std::vector<CMyVector*> vector;
+    CMyMatrix matrix1(2, 2, vector);
+    matrix1.setValue(0, 0, 1);
+    matrix1.setValue(0, 1, 2);
+    matrix1.setValue(1, 0, 3);
+    matrix1.setValue(1, 1, 4);
     CMyVector vector3(2, v);
     vector3.setValue(1.000000, 0);
     vector3.setValue(2.000000, 1);
-
-    CMyVector vector4(2, v);
-    vector4.setValue(3.000000, 0);
-    vector4.setValue(4.000000, 1);
+    CMyVector result(2, v);
+    CMyMatrix matrix2(2, 2, vector);
 
     CMyVector vectorJ(4, v);
     vectorJ.setValue(1, 0);
     vectorJ.setValue(2, 1);
     vectorJ.setValue(0, 2);
     vectorJ.setValue(3, 3);
-
-    char menuChoice = '0';
-
-    std::vector<CMyVector*> vector;
-
-    CMyMatrix matrix1(2, 2, vector);
-    matrix1.setValue(0, 0, 1);
-    matrix1.setValue(0, 1, 2);
-    matrix1.setValue(1, 0, 3);
-    matrix1.setValue(1, 1, 4);
-
-    CMyMatrix matrix2(2, 2, vector);
     CMyMatrix matrixJ(3, 4, vector);
 
-    CMyVector result(2, v);
+    CMyVector vectorN(2, v);
+    vectorN.setValue(1, 0);
+    vectorN.setValue(1, 1);
+    CMyVector resultN(2, v);
+
+    char menuChoice = '0';
 
     while(menuChoice != '4') {
         std::cout << std::endl;
@@ -122,7 +151,9 @@ int main() {
                 std::cout << "( " << matrixJ.getValue(2, 0) << " " << matrixJ.getValue(2, 1) << " " << matrixJ.getValue(2, 2) << " " << matrixJ.getValue(2, 3) << " )" << std::endl << std::endl;
                 break;
             case '3':
+                resultN = newton(vectorN, g);
 
+                std::cout << "( " << resultN.getValue(0) << " " << resultN.getValue(1) << " )" << std::endl << std::endl;
                 break;
             case '4':
                 break;
