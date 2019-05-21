@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Aufgabe1.dir/main.cpp.o CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o CMakeFiles/Aufgabe1.dir/CMyMatrix.cpp.o  -o Aufgabe1 

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/CMyMatrix.h
+vector
+-
+CMyVector.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/CMyVector.h
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/CMyVector.h
+iostream
+-
+vector
+-
+cmath
+-
+iomanip
+-
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/main.cpp
+CMyVector.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/CMyVector.h
+CMyMatrix.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/CMyMatrix.h
+

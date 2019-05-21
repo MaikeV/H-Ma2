@@ -48,10 +48,10 @@ RM = /snap/clion/70/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1
+CMAKE_SOURCE_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/cmake-build-debug/CMakeFiles /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ Aufgabe1: cmake_check_build_system
 Aufgabe1/fast:
 	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/build
 .PHONY : Aufgabe1/fast
+
+CMyMatrix.o: CMyMatrix.cpp.o
+
+.PHONY : CMyMatrix.o
+
+# target to build an object file
+CMyMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/CMyMatrix.cpp.o
+.PHONY : CMyMatrix.cpp.o
+
+CMyMatrix.i: CMyMatrix.cpp.i
+
+.PHONY : CMyMatrix.i
+
+# target to preprocess a source file
+CMyMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/CMyMatrix.cpp.i
+.PHONY : CMyMatrix.cpp.i
+
+CMyMatrix.s: CMyMatrix.cpp.s
+
+.PHONY : CMyMatrix.s
+
+# target to generate assembly for a file
+CMyMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/CMyMatrix.cpp.s
+.PHONY : CMyMatrix.cpp.s
 
 CMyVector.o: CMyVector.cpp.o
 
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Aufgabe1"
 	@echo "... edit_cache"
+	@echo "... CMyMatrix.o"
+	@echo "... CMyMatrix.i"
+	@echo "... CMyMatrix.s"
 	@echo "... CMyVector.o"
 	@echo "... CMyVector.i"
 	@echo "... CMyVector.s"

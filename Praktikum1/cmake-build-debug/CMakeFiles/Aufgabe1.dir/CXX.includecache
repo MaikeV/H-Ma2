@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/CMyVector.h
+iostream
+-
+vector
+-
+cmath
+-
+iomanip
+-
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/main.cpp
+CMyVector.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/CMyVector.h
+
