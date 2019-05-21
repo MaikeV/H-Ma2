@@ -45,7 +45,6 @@ CMyMatrix jacobi(CMyVector x, CMyVector (*f)(CMyVector x)) {
             x.setValue(tmp,n);
 
             jacobi.setValue(m, n, y);
-
         }
     }
     return jacobi;
@@ -77,9 +76,6 @@ int main() {
     vectorJ.setValue(2, 1);
     vectorJ.setValue(0, 2);
     vectorJ.setValue(3, 3);
-
-    //gradientenverfahren(vector1, f);
-    //gradientenverfahren(vector2, g, 0.1);
 
     char menuChoice = '0';
 
@@ -120,6 +116,10 @@ int main() {
                 break;
             case '2':
                 matrixJ = jacobi(vectorJ, f);
+
+                std::cout << "( " << matrixJ.getValue(0, 0) << " " << matrixJ.getValue(0, 1) << " " << matrixJ.getValue(0, 2) << " " << matrixJ.getValue(0, 3) << " )" << std::endl;
+                std::cout << "( " << matrixJ.getValue(1, 0) << " " << matrixJ.getValue(1, 1) << " " << matrixJ.getValue(1, 2) << " " << matrixJ.getValue(1, 3) << " )" << std::endl;
+                std::cout << "( " << matrixJ.getValue(2, 0) << " " << matrixJ.getValue(2, 1) << " " << matrixJ.getValue(2, 2) << " " << matrixJ.getValue(2, 3) << " )" << std::endl << std::endl;
                 break;
             case '3':
 

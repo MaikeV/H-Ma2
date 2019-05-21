@@ -9,7 +9,7 @@ double CMyMatrix::getValue(int m, int n) {
         return 0.0;
     }
 
-    return this->values.at(m)->getValue(n);
+    return this->values.at(n)->getValue(m);
 }
 
 void CMyMatrix::setValue(int m, int n, double value) {
@@ -17,7 +17,7 @@ void CMyMatrix::setValue(int m, int n, double value) {
         return;
     }
 
-    this->values.at(m)->setValue(value, n);
+    this->values.at(n)->setValue(value, m);
 }
 
 CMyMatrix CMyMatrix::invers() {
