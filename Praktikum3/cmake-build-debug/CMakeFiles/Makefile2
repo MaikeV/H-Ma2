@@ -59,45 +59,45 @@ RM = /snap/clion/73/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2
+CMAKE_SOURCE_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Aufgabe1.dir
+# Target rules for target CMakeFiles/Praktikum3.dir
 
 # All Build rule for target.
-CMakeFiles/Aufgabe1.dir/all:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/depend
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Aufgabe1"
-.PHONY : CMakeFiles/Aufgabe1.dir/all
+CMakeFiles/Praktikum3.dir/all:
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/depend
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Praktikum3"
+.PHONY : CMakeFiles/Praktikum3.dir/all
 
 # Include target in all.
-all: CMakeFiles/Aufgabe1.dir/all
+all: CMakeFiles/Praktikum3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Aufgabe1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Aufgabe1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum2/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Aufgabe1.dir/rule
+CMakeFiles/Praktikum3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Praktikum3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Praktikum3.dir/rule
 
 # Convenience name for target.
-Aufgabe1: CMakeFiles/Aufgabe1.dir/rule
+Praktikum3: CMakeFiles/Praktikum3.dir/rule
 
-.PHONY : Aufgabe1
-
-# clean rule for target.
-CMakeFiles/Aufgabe1.dir/clean:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/clean
-.PHONY : CMakeFiles/Aufgabe1.dir/clean
+.PHONY : Praktikum3
 
 # clean rule for target.
-clean: CMakeFiles/Aufgabe1.dir/clean
+CMakeFiles/Praktikum3.dir/clean:
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/clean
+.PHONY : CMakeFiles/Praktikum3.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Praktikum3.dir/clean
 
 .PHONY : clean
 

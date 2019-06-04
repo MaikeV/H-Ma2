@@ -48,10 +48,10 @@ RM = /snap/clion/73/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1
+CMAKE_SOURCE_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3/cmake-build-debug/CMakeFiles /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mauske/Studium/HoeMa2/H-Ma2/Praktikum3/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Aufgabe1
+# Target rules for targets named Praktikum3
 
 # Build rule for target.
-Aufgabe1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Aufgabe1
-.PHONY : Aufgabe1
+Praktikum3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Praktikum3
+.PHONY : Praktikum3
 
 # fast build rule for target.
-Aufgabe1/fast:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/build
-.PHONY : Aufgabe1/fast
+Praktikum3/fast:
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/build
+.PHONY : Praktikum3/fast
 
 CMyVector.o: CMyVector.cpp.o
 
@@ -129,7 +129,7 @@ CMyVector.o: CMyVector.cpp.o
 
 # target to build an object file
 CMyVector.cpp.o:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/CMyVector.cpp.o
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/CMyVector.cpp.o
 .PHONY : CMyVector.cpp.o
 
 CMyVector.i: CMyVector.cpp.i
@@ -138,7 +138,7 @@ CMyVector.i: CMyVector.cpp.i
 
 # target to preprocess a source file
 CMyVector.cpp.i:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/CMyVector.cpp.i
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/CMyVector.cpp.i
 .PHONY : CMyVector.cpp.i
 
 CMyVector.s: CMyVector.cpp.s
@@ -147,8 +147,35 @@ CMyVector.s: CMyVector.cpp.s
 
 # target to generate assembly for a file
 CMyVector.cpp.s:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/CMyVector.cpp.s
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/CMyVector.cpp.s
 .PHONY : CMyVector.cpp.s
+
+C_DGLSolver.o: C_DGLSolver.cpp.o
+
+.PHONY : C_DGLSolver.o
+
+# target to build an object file
+C_DGLSolver.cpp.o:
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/C_DGLSolver.cpp.o
+.PHONY : C_DGLSolver.cpp.o
+
+C_DGLSolver.i: C_DGLSolver.cpp.i
+
+.PHONY : C_DGLSolver.i
+
+# target to preprocess a source file
+C_DGLSolver.cpp.i:
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/C_DGLSolver.cpp.i
+.PHONY : C_DGLSolver.cpp.i
+
+C_DGLSolver.s: C_DGLSolver.cpp.s
+
+.PHONY : C_DGLSolver.s
+
+# target to generate assembly for a file
+C_DGLSolver.cpp.s:
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/C_DGLSolver.cpp.s
+.PHONY : C_DGLSolver.cpp.s
 
 main.o: main.cpp.o
 
@@ -156,7 +183,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +192,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +201,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Aufgabe1.dir/build.make CMakeFiles/Aufgabe1.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/Praktikum3.dir/build.make CMakeFiles/Praktikum3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -184,11 +211,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Aufgabe1"
+	@echo "... Praktikum3"
 	@echo "... edit_cache"
 	@echo "... CMyVector.o"
 	@echo "... CMyVector.i"
 	@echo "... CMyVector.s"
+	@echo "... C_DGLSolver.o"
+	@echo "... C_DGLSolver.i"
+	@echo "... C_DGLSolver.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
