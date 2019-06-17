@@ -1,0 +1,3 @@
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/cmake-build-debug/CMakeFiles/Praktikum4.dir
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/CKomplex.h
+cmath
+-
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+CKomplex.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/CKomplex.h
+
