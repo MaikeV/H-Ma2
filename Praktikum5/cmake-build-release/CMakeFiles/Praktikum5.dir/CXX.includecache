@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum5/CLotto.h
+CZufall.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum5/CZufall.h
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum5/CZufall.h
+vector
+-
+stdlib.h
+-
+time.h
+-
+
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum5/main.cpp
+iostream
+-
+unistd.h
+-
+iomanip
+-
+CZufall.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum5/CZufall.h
+CLotto.h
+/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum5/CLotto.h
+

@@ -39,31 +39,31 @@ public:
     double abs() {
         return sqrt(pow(this->getRe(), 2) + pow(this->getIm(), 2));
     }
+
+    CKomplex operator+(CKomplex second) {
+        double a = this->getRe() + second.getRe();
+        double b = this->getIm() + second.getIm();
+
+        return CKomplex(a, b);
+    }
+
+    CKomplex operator*(CKomplex second) {
+        //(a + bj) * (c + dj)
+        // ac + adj + bcj + bd * pow(j, 2)
+        // ac + adj + bcj - bd
+
+        double a = (this->getRe() * second.getRe()) - (this->getIm() * second.getIm());
+        double b = (this->getRe() * second.getIm()) + (this->getIm() * second.getRe());
+
+        return CKomplex(a, b);
+    }
+
+    CKomplex operator*(double lambda) {
+        double a = lambda * this->getRe();
+        double b = lambda * this->getIm();
+
+        return CKomplex(a, b);
+    }
 };
-
-CKomplex operator+(CKomplex first, CKomplex second) {
-    double a = first.getRe() + second.getRe();
-    double b = first.getIm() + second.getIm();
-
-    return CKomplex(a, b);
-}
-
-CKomplex operator*(CKomplex first, CKomplex second) {
-    //(a + bj) * (c + dj)
-    // ac + adj + bcj + bd * pow(j, 2)
-    // ac + adj + bcj - bd
-
-    double a = (first.getRe() * second.getRe()) - (first.getIm() * second.getIm());
-    double b = (first.getRe() * second.getIm()) + (first.getIm() * second.getRe());
-
-    return CKomplex(a, b);
-}
-
-CKomplex operator*(double lambda, CKomplex comp) {
-    double a = lambda * comp.getRe();
-    double b = lambda * comp.getIm();
-
-    return CKomplex(a, b);
-}
 
 #endif //PRAKTIKUM4_CKOMPLEX_H

@@ -70,10 +70,13 @@ std::vector<CKomplex> fourierTransformation(std::vector<CKomplex> values, int j)
 
 double calcDifference(std::vector<CKomplex> vectorI, std::vector<CKomplex> vectorO) {
     double max = 0;
+    double diff = 0;
 
     for(int i = 0; i < vectorI.size(); i++) {
-        if(vectorI[i].getRe() - vectorO[i].getRe() > max)
-            max = vectorI[i].getRe() - vectorO[i].getRe();
+        diff = std::abs(vectorI[i].getRe() - vectorO[i].getRe());
+
+        if(diff > max)
+            max = diff;
     }
 
     return max;
@@ -90,20 +93,23 @@ int main() {
     std::vector<CKomplex> orig;
 
     orig = werte_einlesen("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/Daten_original.txt");
-    vector = fourierTransformation(orig, 1);
+    vector = fourierTransformation(orig, -1);
 
     werte_ausgeben("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/epsilonDefault.txt", vector);
     werte_ausgeben("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/epsilon01.txt", vector, 0.1);
     werte_ausgeben("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/epsilon10.txt", vector, 1.0);
 
     vectorD = werte_einlesen("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/epsilonDefault.txt");
-    vectorDB = fourierTransformation(vectorD, -1);
+    vectorDB = fourierTransformation(vectorD, 1);
+    werte_ausgeben("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/defaultBacktrans.txt", vectorDB);
 
     vector01 = werte_einlesen("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/epsilon01.txt");
-    vector01B = fourierTransformation(vector01, -1);
+    vector01B = fourierTransformation(vector01, 1);
+    werte_ausgeben("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/01Backtrans.txt", vectorDB);
 
     vector10 = werte_einlesen("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/epsilon10.txt");
-    vector10B = fourierTransformation(vector10, -1);
+    vector10B = fourierTransformation(vector10, 1);
+    werte_ausgeben("/home/mauske/Studium/HoeMa2/H-Ma2/Praktikum4/10Backtrans.txt", vectorDB);
 
     std::cout << "Maximale Abweichungen:" << std::endl;
     std::cout << "Bei Default-Epsilon: " << calcDifference(orig, vectorDB) << std::endl;
